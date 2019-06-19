@@ -20,150 +20,24 @@
 
 <body>
     <!-- Main Container -->
-    <div class="container">
+    <div class="container rightslide">
         <!-- Navigation/Header -->
-        <nav id="Darkblue_Navigation" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <img id="nav_icon" src="img/Logo/ROC_Games_LOGO_Crop.png">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Games</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Highscores</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inloggen</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Registreren</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <?php
+            $subpage = false;
+            include 'Elementen/Navigation.php';
+        ?>
         <!-- Game Collection -->
         <div class="game_container">
-            <div class="row justify-content-around">
-                <div class="col-lg-4">
-                    <div class="card custom_card" style="width: 18rem;">
-                        <img class="card-img-top custom_gameimg" src="img/Games/Breakout.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">MDN Breakout</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Speel Dit Spel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card custom_card" style="width: 18rem;">
-                        <img class="card-img-top custom_gameimg" src="img/Games/Flappybird.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Flappy Bird</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Speel Dit Spel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card custom_card" style="width: 18rem;">
-                        <img class="card-img-top custom_gameimg" src="img/Games/Tetris.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Tetris</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Speel Dit Spel</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-around">
-                <div class="col-lg-4">
-                    <div class="card custom_card" style="width: 18rem;">
-                        <img class="card-img-top custom_gameimg" src="img/Games/Pong.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Pong</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Speel Dit Spel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card custom_card" style="width: 18rem;">
-                        <img class="card-img-top custom_gameimg" src="img/Games/Snake.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Snake</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Speel Dit Spel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card custom_card" style="width: 18rem;">
-                        <img class="card-img-top custom_gameimg" src="img/Games/Simon.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Simon</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Speel Dit Spel</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-around">
-                <div class="col-lg-4">
-                    <div class="card custom_card" style="width: 18rem;">
-                        <img class="card-img-top custom_gameimg" src="img/Games/RPS.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">RPS</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="Games/RockPaperSciccors/RockPaperScissor.php" class="btn btn-primary">Speel Dit Spel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card custom_card" style="width: 18rem;">
-                        <img class="card-img-top custom_gameimg" src="img/Games/Memory.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Memory</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Speel Dit Spel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card custom_card" style="width: 18rem;">
-                        <img class="card-img-top custom_gameimg" src="img/Games/TTT.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Boter, Kaas & Eieren</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Speel Dit Spel</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+                if ($loginRvdv == true) {
+                    echo '<div class="loggedin_container" id="loggedin_as">';
+                        echo "Je bent ingelogd als:<strong> ". $userNameRvdv ."</strong>";
+                    echo '</div>';
+                }
+                include 'Elementen/GetGames.php';
+            ?>
         </div>
+        <div id="rocgames_footer">ROC Games ® - 2019 </div>
     </div>
 </body>
 
